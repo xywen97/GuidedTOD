@@ -1,6 +1,11 @@
 # LLM Framework for Goal-oriented Dialogue Systems
 
+This is the official repo for the paper: "Guideline Compliance in Task-Oriented Dialogue: The Chained Prior Approach".
+
 The code base relies on the huggingface transformer library.
+
+### News:
+Our paper is accepted by NAACL 2025!
 
 # Data
 In this work we use two dataset ABCD (Chen et al., 2021) and MultiWOZ 2.2 (Zang et al., 2020)(pending).
@@ -136,3 +141,15 @@ python train.py --experiment_name abcdASTWAction \
 ```
 #### Note:
 - The `--num_beams` parameter is used to set the number of beams for beam search, it is required to be set to 4 for evaluation.
+
+### Cite:
+```json
+@inproceedings{wen-etal-2025-guideline,
+    title = "Guideline Compliance in Task-Oriented Dialogue: The Chained Prior Approach",
+    author = "Wen, Xiangyu and Zhong, Jianyuan and Xu, Zhijian and Xu, Qiang",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2025",
+    year = "2025",
+    url = "https://aclanthology.org/2025.findings-naacl.377/",
+    pages = "6750--6776",
+}
+```
